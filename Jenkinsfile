@@ -91,7 +91,7 @@ pipeline{
         }       
     }
     post{
-	always {
+	      always  {
 		echo 'slack Notification'
 		slackSend channel: '#devops-ci',
 			color:COLOT_MAP[currentBuil.currentResult],
@@ -99,3 +99,4 @@ pipeline{
     }
     }        
 }
+
