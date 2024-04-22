@@ -89,8 +89,7 @@ pipeline{
                 )
             }
         }       
-    }
-    post{
+        post{
 	      always  {
 		echo 'slack Notification'
 		slackSend channel: '#devops-ci',
@@ -99,4 +98,4 @@ pipeline{
     }
     }        
 }
-
+}
